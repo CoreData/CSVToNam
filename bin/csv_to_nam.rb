@@ -4,7 +4,6 @@ require_relative '../lib/CSVToNam'
 options = {}
 
 option_parser = OptionParser.new do |opts|
-
   exe_name = File.basename($PROGRAM_NAME)
   opts.banner = "Usage: #{exe_name} [options] csv_file_name"
 
@@ -17,7 +16,7 @@ option_parser = OptionParser.new do |opts|
   end
 
   opts.on('-t', '--team', 'Process a CSV file for a team competition.') do
-    options[:finals] = true
+    options[:team] = true
   end
 end
 
