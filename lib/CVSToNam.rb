@@ -1,3 +1,8 @@
+require 'date'
+require 'time'
+require 'csv'
+
+# LOCAL
 require 'CVSToNam/version'
 require 'CVSToNam/event'
 require 'CVSToNam/file_writer'
