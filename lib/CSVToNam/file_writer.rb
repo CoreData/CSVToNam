@@ -1,4 +1,4 @@
-module CVSToNam
+module CSVToNam
   class FileWriter
     attr_accessor :filename, :payload
 

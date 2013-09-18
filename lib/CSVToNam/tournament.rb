@@ -1,4 +1,4 @@
-module CVSToNam
+module CSVToNam
   class Tournament
     attr_accessor :name, :date, :start_time, :events
 

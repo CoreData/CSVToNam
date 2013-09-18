@@ -1,12 +1,12 @@
 #!/usr/bin/ruby
-require_relative '../lib/CVSToNam'
+require_relative '../lib/CSVToNam'
 
 options = {}
 
 option_parser = OptionParser.new do |opts|
 
   exe_name = File.basename($PROGRAM_NAME)
-  opts.banner = "Usage: #{exe_name} [options] cvs_file_name"
+  opts.banner = "Usage: #{exe_name} [options] csv_file_name"
 
   opts.on('-n', '--without-nam', 'No video board files will be generated.') do
     options[:nam] = false
@@ -24,7 +24,7 @@ end
 begin
   option_parser.parse!
   if ARGV.empty?
-    puts 'Error: no CVS file name supplied'
+    puts 'Error: no CSV file name supplied'
     puts
     puts option_parser.help
     exit 1

@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'CVSToNam/version'
+require 'CSVToNam/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "CVSToNam"
-  spec.version       = CVSToNam::VERSION
+  spec.name          = "CSVToNam"
+  spec.version       = CSVToNam::VERSION
   spec.authors       = ["Chris Anders"]
   spec.email         = ["chris at hell-labs.org"]
   spec.description   = %q{This gem converts CSV files to NAM used by Sportlicht video boards}
   spec.summary       = %q{The DLRG uses an application called jAuswertung for its competitions. This gem can be used to convert the CSV export file of jAuswertung to configuration files for OMEGA Ares21/Sportlicht video boards.}
-  spec.homepage      = "http://www.hell-labs.dexy"
+  spec.homepage      = "http://www.hell-labs.de"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

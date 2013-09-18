@@ -1,4 +1,4 @@
-module CVSToNam
+module CSVToNam
   class Swimmer
     attr_accessor :first_name, :last_name, :club, :category
     attr_reader :birth_year

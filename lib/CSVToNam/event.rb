@@ -1,4 +1,4 @@
-module CVSToNam
+module CSVToNam
   class Event
     attr_accessor :number, :name, :distance, :category, :heat
 

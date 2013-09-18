@@ -1,4 +1,4 @@
-module CVSToNam
+module CSVToNam
   class Storage
     def initialize
       @storage = Hash.new
