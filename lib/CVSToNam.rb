@@ -1,6 +1,7 @@
 require 'date'
 require 'time'
 require 'csv'
+require 'optparse'
 
 # LOCAL
 require 'CVSToNam/version'

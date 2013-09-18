@@ -1,6 +1,4 @@
 #!/usr/bin/ruby
-
-require 'optparse'
 require_relative '../lib/CVSToNam'
 
 options = {}
@@ -18,7 +16,7 @@ option_parser = OptionParser.new do |opts|
     options[:ares] = false
   end
 
-  opts.on('-t', '--team', 'Process a CSV for a team competition.') do
+  opts.on('-t', '--team', 'Process a CSV file for a team competition.') do
     options[:finals] = true
   end
 end
@@ -34,4 +32,7 @@ begin
     filename = ARGV.last
     puts "You requested processing for CSV file: #{filename}"
   end
+rescue OptionParser::InvalidArgument => ex
+  STDERR.puts ex:message
+  STDERR.puts option_parser
 end
