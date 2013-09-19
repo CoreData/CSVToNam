@@ -12,5 +12,8 @@ require 'CSVToNam/storage'
 require 'CSVToNam/swimmer'
 require 'CSVToNam/tournament'
 
+require 'CSVToNam/Team/team'
+require 'CSVToNam/Individual/individual'
+
 module CSVToNam
 end
