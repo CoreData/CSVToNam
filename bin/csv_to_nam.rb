@@ -16,8 +16,8 @@ option_parser = OptionParser.new do |opts|
     options[:ares] = false
   end
 
-  opts.on('-t', '--team', 'Process a CSV file for a team competition.') do
-    options[:team] = true
+  opts.on('-t', '--Team', 'Process a CSV file for a Team competition.') do
+    options[:Team] = true
   end
 end
 
