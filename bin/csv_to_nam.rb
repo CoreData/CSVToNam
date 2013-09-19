@@ -1,6 +1,7 @@
 #!/usr/bin/ruby
 require_relative '../lib/CSVToNam'
 
+POOL_LANES = 8
 options = {}
 
 option_parser = OptionParser.new do |opts|
@@ -30,6 +31,8 @@ begin
   else
     filename = ARGV.last
     puts "You requested processing for CSV file: #{filename}"
+    # TODO
+    # Insert processing statements here
   end
 rescue OptionParser::InvalidArgument => ex
   STDERR.puts ex:message
