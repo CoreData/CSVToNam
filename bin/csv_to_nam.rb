@@ -31,8 +31,7 @@ begin
   else
     filename = ARGV.last
     puts "You requested processing for CSV file: #{filename}"
-    # TODO
-    # Insert processing statements here
+    # TODO Insert processing statements here
   end
 rescue OptionParser::InvalidArgument => ex
   STDERR.puts ex:message
