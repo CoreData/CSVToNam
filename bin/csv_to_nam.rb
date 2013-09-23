@@ -17,10 +17,12 @@ option_parser = OptionParser.new do |opts|
   end
 
   opts.on('-t', '--team', 'Process a CSV file for a Team competition.') do
-    options[:Team] = true
+    options[:team] = true
   end
 
-  opts.on('-f', '--finals', 'Process a CSV file for an individual final.')
+  opts.on('-f', '--finals', 'Process a CSV file for an individual final.') do
+    options[:finals] = true
+  end
 end
 
 begin
@@ -33,7 +35,6 @@ begin
   else
     filename = ARGV.last
     puts "You requested processing for CSV file: #{filename}"
-    # TODO Insert processing statements here
   end
 rescue OptionParser::InvalidArgument => ex
   STDERR.puts ex:message
