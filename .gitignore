@@ -4,3 +4,4 @@
 Gemfile.lock
 *.gem
 test.csv
+test_write.csv
