@@ -43,6 +43,7 @@ begin
     CSVToNam::Team.was_called if options[:team]
     CSVToNam::Individual.final if options[:finals]
     CSVToNam::Individual.processor(CSVToNam::CSVReader.read_csv(filename)) if options.empty?
+    CSVToNam::FileWriter.write_file("test_write.csv", CSVToNam::CSVReader.read_csv(filename))
 
     end
 rescue OptionParser::InvalidArgument => ex
