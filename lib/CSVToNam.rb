@@ -12,6 +12,7 @@ require 'CSVToNam/storage'
 require 'CSVToNam/swimmer'
 require 'CSVToNam/tournament'
 
+require 'CSVToNam/csv_reader/csv_reader'
 require 'CSVToNam/Team/team'
 require 'CSVToNam/Individual/individual'
 
