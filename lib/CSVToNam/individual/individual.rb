@@ -1,8 +1,8 @@
 module CSVToNam
   module Individual
     # TODO implement code to handle csv files for individual competitions
-    def self.was_called
-      puts "#{self}.#{__method__} was called!"
+    def self.processor(payload)
+      p payload
     end
 
     # This method handles an individual final competition.

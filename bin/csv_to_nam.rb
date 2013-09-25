@@ -35,7 +35,16 @@ begin
   else
     filename = ARGV.last
     puts "You requested processing for CSV file: #{filename}"
-  end
+
+    options.each do |key, value|
+      puts "#{key}: #{value}"
+    end
+
+    CSVToNam::Team.was_called if options[:team]
+    CSVToNam::Individual.final if options[:finals]
+    CSVToNam::Individual.processor(CSVToNam::CSVReader.read_csv(filename)) if options.empty?
+
+    end
 rescue OptionParser::InvalidArgument => ex
   STDERR.puts ex:message
   STDERR.puts option_parser
